@@ -1,1 +1,7 @@
-<p>create works!</p>
+<form [formGroup]="form" (ngSubmit)="handleOnSubmit">
+  <mat-form-field>
+    <mat-label>Titulo</mat-label>
+    <input matInput formControlName="title" placeholder="Titulo"/>
+  </mat-form-field>
+  <button mat-raised-button color="primary" type="submit">Salvar</button>
+</form>
